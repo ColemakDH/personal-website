@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-   <!-- Credits/Inspirations: Julian Molina (Overall format of site like nav bar) Ana Cisneros: Ideas for creativity like backgrounds W3Schools: Code for many things I didn't understand -->
+   
 <meta charset="utf-8">
 
-  <link rel="stylesheet" href="import/index.css">
+  <link rel="stylesheet" href="import/syles.css">
   
 
 <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
@@ -36,43 +36,37 @@
   <meta name="twitter:image" content="https://images.squarespace-cdn.com/content/v1/54d50ceee4b05797b34869cf/74eac249-563f-467e-acea-1d2d62f524f9/1f915.png?format=300w">
 
 
-<script>
-  function init() {
-    var loc = window.location.href;
-    var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
-    var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
-                          loc + '?profile=css3';
-    document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
-    document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
-  }
-  window.onload = init;
-  </script>
-
-</head>
-
-<body>
-
-
-  <div class="topnav">
-    <a class="active" href="https://averywest.org/">Home</a>
-	<a href="https://averywest.org/aboutme">About</a>
-    <a href="https://averywest.org/webdevgoals">Goals</a>
-    <a href="https://averywest.org/links">My Links</a>
-    <a href="https://averywest.org/contact">Contact</a>
-    <a href="https://colemakdh.github.io/HHM/">HHM</a>
-    <a href="https://averywest.org/rebrand">Rebrand</a>
-
-    </div>
-
-<h1>Home Page</h1>
-
-
-<footer>
-  <a id="vLink1"><strong> HTML </strong> Valid! </a> |
-  <a id="vLink2"><strong> CSS </strong> Valid! </a>
-  </footer>
-  
-  <video src="media/forestfall.mp4" muted loop autoplay></video>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Avery West</title>
+      <link rel="stylesheet" href="import/syles.css">
+      <script src="https://kit.fontawesome.com/531bfb5cc0.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <div id="header">
+          <div class="container">
+              <nav>
+                  <!-- <img src="Images/logo1.png" class="logo"> -->
+                  <ul id="sidemenu">
+                      <li><a href="">Home</a></li>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#services">Links</a></li>
+                      <li><a href="#portfolio">Goals</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                      <!-- <button class="switch-mode">Switch Mode</button> -->
+                      <i class="fas fa-times" onclick="closemenu()"></i>
+                  </ul>
+                  <i class="fas fa-bars" onclick="openmenu()"></i>
+              </nav>
+              <div class="header-text">
+                  <p>Jack of All Trades</p>
+                  <h1>Hi, I'm <span id="type" data-text="Avery West">Avery West</span><br>Web Developer</h1>
+              </div>
+              </label>
+          </div>
+      </div>
 
 </body>
 
