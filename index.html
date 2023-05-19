@@ -2,9 +2,13 @@
 <html lang="en">
    
 <meta charset="utf-8">
-
-  <link rel="stylesheet" href="import/syles.css">
+  <link rel="stylesheet" href="import/nav.css">
+  <link rel="stylesheet" href="import/main.css">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
@@ -41,25 +45,24 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Avery West</title>
-      <link rel="stylesheet" href="import/syles.css">
+      <link rel="stylesheet" href="import/main.css">
       <script src="https://kit.fontawesome.com/531bfb5cc0.js" crossorigin="anonymous"></script>
   </head>
   <body>
       <div id="header">
           <div class="container">
-              <nav>
-                  <!-- <img src="Images/logo1.png" class="logo"> -->
-                  <ul id="sidemenu">
-                      <li><a href="">Home</a></li>
-                      <li><a href="#about">About</a></li>
-                      <li><a href="#services">Links</a></li>
-                      <li><a href="#portfolio">Goals</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                      <!-- <button class="switch-mode">Switch Mode</button> -->
-                      <i class="fas fa-times" onclick="closemenu()"></i>
-                  </ul>
-                  <i class="fas fa-bars" onclick="openmenu()"></i>
-              </nav>
+            <nav>
+              <ul id="sidemenu">
+                <li><a href="https://github.com/Colemakdh" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://youtube.com/@ColemakDH" class="social"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="index.html"><i class="fa fa-house"></i>Home</a></li>
+                <li><a href="resume.html"><i class="fa fa-file"></i>About Me</a></li>
+                <li><a href="blog.html"><i class="fas fa-newspaper"></i>Resume</a></li>
+                <li><a href="contactme.html"><i class="fa-solid fa-envelope"></i>Contact Me</a>
+                  <i class="fas fa-times" onclick="closemenu()"></i>
+              </ul>
+              <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
               <div class="header-text">
                   <p>Jack of All Trades</p>
                   <h1>Hi, I'm <span id="type" data-text="Avery West">Avery West</span><br>Web Developer</h1>

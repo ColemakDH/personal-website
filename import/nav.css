@@ -1,0 +1,118 @@
+/**{
+  outline: solid 2px red;
+}*/
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    
+  }
+  
+  header {
+    background: #0b0C10;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .logo {
+    float: left;
+    float:left;
+    margin-top: 10px;
+    padding-right: 2px;
+    font-size: 50px;
+    color: #C5C6C7;
+    border: solid #C5C6C7 2px;
+    border-radius: 10px;
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  nav ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+  nav li {
+    display: inline-block;
+    margin-left: 10px;
+    padding-top: 10px;
+  
+    position: relative;
+  }
+  
+  nav a {
+    color: #C5C6C7;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;  
+  }
+  nav i {
+    color: #C5C6C7;
+    padding-right: 3px;
+  }
+  
+  nav a:hover {
+    font-size: 22px;
+  }
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #C5C6C7;
+  
+    position: absolute;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }
+
+
+  nav .fas {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url(Images/mini-pic1.png);
+    }
+
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+
+    }
+}
